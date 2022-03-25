@@ -1,7 +1,6 @@
 import sys
 
 from PyQt5.QtWidgets import *
-from PyQt5 import *
 
 from main_window_ui import Ui_MainWindow
 
@@ -16,12 +15,9 @@ class Window(QMainWindow, Ui_MainWindow):
         dialog.exec()
 
     def fill(self, list):
-        self.lable1 = QLable(one, self)
-        self.lable2 = QLable(zwo, self)
-
         x = 1
         for i in list:
-            z = eval("lable" + x)
+            z = eval("self.lable" + x)
             z = i
             x += 1
 
