@@ -325,7 +325,7 @@
      <string>TextLabel</string>
     </property>
    </widget>
-   <widget class="QTextEdit" name="textEdit">
+   <widget class="QTextEdit" name="textEdit_1">
     <property name="geometry">
      <rect>
       <x>360</x>
