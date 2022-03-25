@@ -1,6 +1,7 @@
 import sys
 
 from PyQt5.QtWidgets import *
+from PyQt5 import *
 
 from main_window_ui import Ui_MainWindow
 
@@ -35,6 +36,6 @@ if __name__ == "__main__":
     list = ["test ewgh", "test awogih"]
     app = QApplication(sys.argv)
     win = Window()
-    # win.fill(list)
+    win.fill(list)
     win.show()
     sys.exit(app.exec())
