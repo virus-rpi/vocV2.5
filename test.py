@@ -17,7 +17,7 @@ class Window(QMainWindow, Ui_MainWindow):
     def fill(self, list):
         x = 1
         for i in list:
-            z = eval("self.lable" + x)
+            z = eval("self.label_" + x)
             z = i
             x += 1
 

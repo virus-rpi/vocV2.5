@@ -34,7 +34,7 @@
      <string>Test</string>
     </property>
    </widget>
-   <widget class="QLabel" name="one">
+   <widget class="QLabel" name="label_1">
     <property name="geometry">
      <rect>
       <x>30</x>
@@ -55,7 +55,7 @@
      <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
     </property>
    </widget>
-   <widget class="QLabel" name="zwo">
+   <widget class="QLabel" name="label_2">
     <property name="geometry">
      <rect>
       <x>30</x>
@@ -76,7 +76,7 @@
      <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
     </property>
    </widget>
-   <widget class="QLabel" name="three">
+   <widget class="QLabel" name="label_3">
     <property name="geometry">
      <rect>
       <x>30</x>
@@ -97,7 +97,7 @@
      <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
     </property>
    </widget>
-   <widget class="QLabel" name="four">
+   <widget class="QLabel" name="label_4">
     <property name="geometry">
      <rect>
       <x>30</x>
@@ -118,7 +118,7 @@
      <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
     </property>
    </widget>
-   <widget class="QLabel" name="five">
+   <widget class="QLabel" name="label_5">
     <property name="geometry">
      <rect>
       <x>30</x>
@@ -139,7 +139,7 @@
      <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
     </property>
    </widget>
-   <widget class="QLabel" name="six">
+   <widget class="QLabel" name="label_6">
     <property name="geometry">
      <rect>
       <x>30</x>
@@ -160,7 +160,7 @@
      <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
     </property>
    </widget>
-   <widget class="QLabel" name="twelve">
+   <widget class="QLabel" name="label_12">
     <property name="geometry">
      <rect>
       <x>30</x>
@@ -181,7 +181,7 @@
      <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
     </property>
    </widget>
-   <widget class="QLabel" name="eight">
+   <widget class="QLabel" name="label_8">
     <property name="geometry">
      <rect>
       <x>30</x>
@@ -202,7 +202,7 @@
      <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
     </property>
    </widget>
-   <widget class="QLabel" name="ten">
+   <widget class="QLabel" name="label_10">
     <property name="geometry">
      <rect>
       <x>30</x>
@@ -223,7 +223,7 @@
      <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
     </property>
    </widget>
-   <widget class="QLabel" name="eleven">
+   <widget class="QLabel" name="label_11">
     <property name="geometry">
      <rect>
       <x>30</x>
@@ -244,7 +244,7 @@
      <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
     </property>
    </widget>
-   <widget class="QLabel" name="nine">
+   <widget class="QLabel" name="label_9">
     <property name="geometry">
      <rect>
       <x>30</x>
@@ -265,7 +265,7 @@
      <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
     </property>
    </widget>
-   <widget class="QLabel" name="seven">
+   <widget class="QLabel" name="label_7">
     <property name="geometry">
      <rect>
       <x>30</x>
@@ -391,7 +391,7 @@
      <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
     </property>
    </widget>
-   <widget class="QLabel" name="thritteen">
+   <widget class="QLabel" name="label_13">
     <property name="geometry">
      <rect>
       <x>30</x>
