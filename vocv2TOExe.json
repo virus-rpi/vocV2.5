@@ -1,0 +1,129 @@
+{
+ "version": "auto-py-to-exe-configuration_v1",
+ "pyinstallerOptions": [
+  {
+   "optionDest": "noconfirm",
+   "value": true
+  },
+  {
+   "optionDest": "filenames",
+   "value": "D:/Python/voc trainer/VOCV2/vocV2.py"
+  },
+  {
+   "optionDest": "onefile",
+   "value": true
+  },
+  {
+   "optionDest": "console",
+   "value": false
+  },
+  {
+   "optionDest": "icon_file",
+   "value": "D:/Python/voc trainer/VOCV2/9108.ico"
+  },
+  {
+   "optionDest": "name",
+   "value": "VokabelTrainer"
+  },
+  {
+   "optionDest": "ascii",
+   "value": false
+  },
+  {
+   "optionDest": "clean_build",
+   "value": false
+  },
+  {
+   "optionDest": "strip",
+   "value": false
+  },
+  {
+   "optionDest": "noupx",
+   "value": false
+  },
+  {
+   "optionDest": "uac_admin",
+   "value": false
+  },
+  {
+   "optionDest": "uac_uiaccess",
+   "value": false
+  },
+  {
+   "optionDest": "win_private_assemblies",
+   "value": false
+  },
+  {
+   "optionDest": "win_no_prefer_redirects",
+   "value": false
+  },
+  {
+   "optionDest": "bootloader_ignore_signals",
+   "value": false
+  },
+  {
+   "optionDest": "datas",
+   "value": "D:/Python/voc trainer/VOCV2/data.json;."
+  },
+  {
+   "optionDest": "datas",
+   "value": "D:/Python/voc trainer/VOCV2/9108.ico;."
+  },
+  {
+   "optionDest": "datas",
+   "value": "D:/Python/voc trainer/VOCV2/dummy.png;."
+  },
+  {
+   "optionDest": "datas",
+   "value": "D:/Python/voc trainer/VOCV2/sounds/bensound-birthofahero.mp3;."
+  },
+  {
+   "optionDest": "datas",
+   "value": "D:/Python/voc trainer/VOCV2/sounds/bensound-epic.mp3;."
+  },
+  {
+   "optionDest": "datas",
+   "value": "D:/Python/voc trainer/VOCV2/sounds/bensound-slowmotion.mp3;."
+  },
+  {
+   "optionDest": "datas",
+   "value": "D:/Python/voc trainer/VOCV2/sounds/levelup.wav;."
+  },
+  {
+   "optionDest": "datas",
+   "value": "D:/Python/voc trainer/VOCV2/sounds/uff1.wav;."
+  },
+  {
+   "optionDest": "datas",
+   "value": "D:/Python/voc trainer/VOCV2/sounds/uff2.wav;."
+  },
+  {
+   "optionDest": "datas",
+   "value": "D:/Python/voc trainer/VOCV2/sounds/uff3.wav;."
+  },
+  {
+   "optionDest": "datas",
+   "value": "D:/Python/voc trainer/VOCV2/sounds/whoosh1.wav;."
+  },
+  {
+   "optionDest": "datas",
+   "value": "D:/Python/voc trainer/VOCV2/sounds/whoosh2.wav;."
+  },
+  {
+   "optionDest": "datas",
+   "value": "D:/Python/voc trainer/VOCV2/sounds/whoosh3.wav;."
+  },
+  {
+   "optionDest": "datas",
+   "value": "D:/Python/voc trainer/VOCV2/sounds/whoosh4.wav;."
+  },
+  {
+   "optionDest": "datas",
+   "value": "D:/Python/voc trainer/VOCV2/__pycache__;__pycache__/"
+  }
+ ],
+ "nonPyinstallerOptions": {
+  "increaseRecursionLimit": true,
+  "manualArguments": ""
+ }
+}

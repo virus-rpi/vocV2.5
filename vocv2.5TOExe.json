@@ -1,0 +1,137 @@
+{
+ "version": "auto-py-to-exe-configuration_v1",
+ "pyinstallerOptions": [
+  {
+   "optionDest": "noconfirm",
+   "value": true
+  },
+  {
+   "optionDest": "filenames",
+   "value": "D:/Python/VOCV2.5/vocV2.py"
+  },
+  {
+   "optionDest": "onefile",
+   "value": false
+  },
+  {
+   "optionDest": "console",
+   "value": false
+  },
+  {
+   "optionDest": "icon_file",
+   "value": "D:/Python/VOCV2.5/9108.ico"
+  },
+  {
+   "optionDest": "name",
+   "value": "VokabelTrainer"
+  },
+  {
+   "optionDest": "ascii",
+   "value": false
+  },
+  {
+   "optionDest": "clean_build",
+   "value": false
+  },
+  {
+   "optionDest": "strip",
+   "value": false
+  },
+  {
+   "optionDest": "noupx",
+   "value": false
+  },
+  {
+   "optionDest": "disable_windowed_traceback",
+   "value": false
+  },
+  {
+   "optionDest": "embed_manifest",
+   "value": true
+  },
+  {
+   "optionDest": "uac_admin",
+   "value": false
+  },
+  {
+   "optionDest": "uac_uiaccess",
+   "value": false
+  },
+  {
+   "optionDest": "win_private_assemblies",
+   "value": false
+  },
+  {
+   "optionDest": "win_no_prefer_redirects",
+   "value": false
+  },
+  {
+   "optionDest": "bootloader_ignore_signals",
+   "value": false
+  },
+  {
+   "optionDest": "datas",
+   "value": "D:/Python/VOCV2.5/9108.ico;."
+  },
+  {
+   "optionDest": "datas",
+   "value": "D:/Python/VOCV2.5/clear_data.json;."
+  },
+  {
+   "optionDest": "datas",
+   "value": "D:/Python/VOCV2.5/data.json;."
+  },
+  {
+   "optionDest": "datas",
+   "value": "D:/Python/VOCV2.5/dummy.png;."
+  },
+  {
+   "optionDest": "datas",
+   "value": "D:/Python/VOCV2.5/old_standart.png;."
+  },
+  {
+   "optionDest": "datas",
+   "value": "D:/Python/VOCV2.5/settings.py;."
+  },
+  {
+   "optionDest": "datas",
+   "value": "D:/Python/VOCV2.5/standart.png;."
+  },
+  {
+   "optionDest": "datas",
+   "value": "D:/Python/VOCV2.5/vocV2.py;."
+  },
+  {
+   "optionDest": "datas",
+   "value": "D:/Python/VOCV2.5/vocv2TOExe.json;."
+  },
+  {
+   "optionDest": "datas",
+   "value": "D:/Python/VOCV2.5/Wie sarte ich den Code.docx;."
+  },
+  {
+   "optionDest": "datas",
+   "value": "D:/Python/VOCV2.5/.idea;.idea/"
+  },
+  {
+   "optionDest": "datas",
+   "value": "D:/Python/VOCV2.5/__pycache__;__pycache__/"
+  },
+  {
+   "optionDest": "datas",
+   "value": "D:/Python/VOCV2.5/DATA;DATA/"
+  },
+  {
+   "optionDest": "datas",
+   "value": "D:/Python/VOCV2.5/pictures;pictures/"
+  },
+  {
+   "optionDest": "datas",
+   "value": "D:/Python/VOCV2.5/sounds;sounds/"
+  }
+ ],
+ "nonPyinstallerOptions": {
+  "increaseRecursionLimit": true,
+  "manualArguments": ""
+ }
+}
