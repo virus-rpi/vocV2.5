@@ -79,7 +79,8 @@ class UI(QMainWindow):
         # self.in_1.setPlainText("")
         try:
             for i in range(1, 29):
-                self.r.append(eval("self.in_" + str(i) + ".toPlainText()"))
+                exec(eval('exe = "self.in_" + str(i) + ".toPlainText()"'))
+                self.r.append(exe)
         except:
             self.r = ["fail"]
         print(self.r)
