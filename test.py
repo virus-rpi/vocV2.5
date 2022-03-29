@@ -75,6 +75,7 @@ class UI(QMainWindow):
                 return
 
     def finish(self):
+        self.r = []
         # print(self.in_1.toPlainText())
         # self.in_1.setPlainText("")
         try:
@@ -83,8 +84,9 @@ class UI(QMainWindow):
                 exec(eval('exe = "self.in_" + str(i) + ".toPlainText()"'))
                 self.r.append(exe)
 
-        except BaseException:
-            self.r = ["fail"]
+        # noinspection PyBroadException
+        except:
+            self.r.append("fail")
         print(self.r)
 
 
