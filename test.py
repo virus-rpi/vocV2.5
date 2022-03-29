@@ -6,16 +6,6 @@ import time
 
 
 class UI(QMainWindow):
-    def tick(self):
-        while True:
-            self.display.display(self.t)
-            self.display.repaint()
-            time.sleep(1)
-            self.t -= 1
-            if self.t <= 0:
-                self.finish()
-                return
-
     def __init__(self, list, t = 120):
         super(UI, self).__init__()
         self.list = list
@@ -100,15 +90,22 @@ class UI(QMainWindow):
 
         self.show()
 
-
+    def tick(self):
+        while True:
+            self.display.display(self.t)
+            self.display.repaint()
+            time.sleep(1)
+            self.t -= 1
+            if self.t <= 0:
+                self.finish()
+                return
 
     def finish(self):
         # print(self.in_1.toPlainText())
         # self.in_1.setPlainText("")
         try:
             for i in range(1, 29):
-                r_r = str(eval("self.in_" + str(i) + ".toPlainText()"))
-                self.r.append(r_r)
+                self.r.append(eval("self.in_" + str(i) + ".toPlainText()"))
         except:
             self.r = ["fail"]
         print(self.r)
