@@ -6,15 +6,15 @@ import time
 
 
 class UI(QMainWindow):
-    def __init__(self, list, t = 120):
+    def __init__(self, voclist, t=120):
         super(UI, self).__init__()
-        self.list = list
+        self.voclist = voclist
         self.r = []
         self.t = t
 
         uic.loadUi("ui/Test.ui", self)
 
-        self.display = self.findChild(QLCDNumber, "lcdNumber")
+        self.disp = self.findChild(QLCDNumber, "lcdNumber")
 
         self.button = self.findChild(QPushButton, "pushButton")
         self.button.clicked.connect(self.finish)
@@ -54,20 +54,20 @@ class UI(QMainWindow):
             exec("self.in_" + str(i) + "= self.findChild(QTextEdit, 'textEdit_" + str(i) + "')")
 
         x = 1
-        for i in list:
+        for i in voclist:
             z = eval("self.label_" + str(x))
             z.setText(i + "  ")
             x += 1
 
-        self.t1 = Thread(target = self.tick)
+        self.t1 = Thread(target=self.tick)
         self.t1.start()
 
         self.show()
 
     def tick(self):
         while True:
-            self.display.display(self.t)
-            self.display.repaint()
+            self.disp.display(self.t)
+            self.disp.repaint()
             time.sleep(1)
             self.t -= 1
             if self.t <= 0:
@@ -79,16 +79,18 @@ class UI(QMainWindow):
         # self.in_1.setPlainText("")
         try:
             for i in range(1, 29):
+                exe = ""
                 exec(eval('exe = "self.in_" + str(i) + ".toPlainText()"'))
                 self.r.append(exe)
-        except:
+
+        except BaseException:
             self.r = ["fail"]
         print(self.r)
 
 
 if __name__ == "__main__":
     app = QApplication(sys.argv)
-    l = ["1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15", "16", "17", "18", "19", "20",
-         "21", "22", "23", "24", "25", "26", "27", "28", "29"]
-    UIWindow = UI(l)
+    vocs = ["1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15", "16", "17", "18", "19",
+            "20", "21", "22", "23", "24", "25", "26", "27", "28", "29"]
+    UIWindow = UI(vocs)
     app.exec_()
