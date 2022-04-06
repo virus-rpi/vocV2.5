@@ -1,7 +1,7 @@
 from pystage.en import Stage
 
 stage = Stage()
-stage.add_backdrop("blue_sky")
+stage.add_backdrop("")
 zombie = stage.add_a_sprite()
 
 def doit(zombie):
