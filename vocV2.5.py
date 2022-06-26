@@ -8,13 +8,13 @@ from tkinter import *
 import random
 import json
 import sys
-import os
-os.environ['PYGAME_HIDE_SUPPORT_PROMPT'] = "hide"
-from pygame import mixer
 from cdifflib import CSequenceMatcher
 from tkinter import messagebox
 from settings import Settings
 from langdetect import detect
+import os
+os.environ['PYGAME_HIDE_SUPPORT_PROMPT'] = "hide"
+from pygame import mixer
 
 richtig = 0
 falsch = 0
@@ -212,6 +212,8 @@ def send(*this_is_an_uselss_variable):
 def getShortcut(event):
     if event.keysym == "s":
         settings()
+    if event.keysym == "h":
+        help()
 
 
 def settings():
@@ -231,6 +233,9 @@ def credit():
                         "Code: virus_rpi\nMusic & Sounds: https://www.bensound.com; https://mixkit.co; "
                         "https://www.fesliyanstudios.com \nPictures: https://charactercreator.org")
 
+def help():
+    messagebox.showinfo("Help", "-scoreboard: Shows the current data \n-veto: Objection to the last valuation\n-kp: If you dont know the answer")
+
 
 def initMenu(base):
     menu = Menu(base)
@@ -242,6 +247,7 @@ def initMenu(base):
     menu.add_cascade(label='Info', menu=infoMenu)
     infoMenu.add_command(label="Whats new?", command=info)
     infoMenu.add_command(label="Credits", command=credit)
+    infoMenu.add_command(label="Help", command=help, accelerator="Strg+H")
 
 
 base = Tk()
@@ -251,6 +257,7 @@ base.iconbitmap(resource_path("9108.ico"))
 base.resizable(width=FALSE, height=FALSE)
 
 base.bind('<Control-s>', getShortcut)
+base.bind('<Control-H>', getShortcut)
 
 # Create Chat window
 ChatLog = Text(base, bd=0, bg="white", height="8", width=50, font="Arial")
@@ -383,7 +390,7 @@ SendButton.place(x=6, y=441, height=50)
 AppendButton.place(x=706, y=441, height=50)
 DeleteButton.place(x=706, y=150, height=50)
 #
-bildLabel.place(x=400, y=30, height=460, width=275)
+bildLabel.place(x=400, y=-20, height=500, width=275)
 #
 levelText.place(x=450, y=20, height=20, width=190)
 DelText.place(x=690, y=20, height=20, width=210)
@@ -422,8 +429,10 @@ while True:
     lastlevel = level
     level = round(score / 10)
     if level > lastlevel:
-        pass
-        # mixer.Sound.play(levelUpSound)
+        if sound:
+            mixer.Sound.play(levelUpSound)
+        else:
+            pass
     if level <= 1:
         level = 1
     leveltxt = text = "Level " + str(level)
