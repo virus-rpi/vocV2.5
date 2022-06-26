@@ -422,8 +422,10 @@ while True:
     lastlevel = level
     level = round(score / 10)
     if level > lastlevel:
-        pass
-        # mixer.Sound.play(levelUpSound)
+        if sound:
+            mixer.Sound.play(levelUpSound)
+        else:
+            pass
     if level <= 1:
         level = 1
     leveltxt = text = "Level " + str(level)
