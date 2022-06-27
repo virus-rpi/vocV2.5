@@ -225,7 +225,7 @@ def settings():
 
 
 def info():
-    messagebox.showinfo("Whats new?", " - This menu bar\n - The settings")
+    messagebox.showinfo("Whats new?", " - This menu bar\n - The settings\n - The help menue")
 
 
 def credit():
@@ -365,11 +365,11 @@ DeutschEntryBoxText = Label(
 DelText = Label(base, bd=0, bg="SystemButtonFace", height="8", width="50", font="Arial")
 DelEntryBox = Text(base, bd=0, bg="white", width=29, height="5", font="Arial")
 
-LateinEntryBoxText.config(text='Latin (z.B. "ire")')
+LateinEntryBoxText.config(text='Foreign lang. (e.g. "ire")')
 DeutschEntryBoxText.config(text='English (e.g. "walk, \nrun")')
 levelText.config(text=leveltxt)
 ChatText.config(text="Your Challenge")
-DelText.config(text="Lat. word (z.B. ire)")
+DelText.config(text="For. lang. word (z.B. ire)")
 TransformText.config(text="Edit Your List")
 MotivatorText.config(text="Your Score")
 
